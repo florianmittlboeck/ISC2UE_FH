@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature Conversion Functions</title>
+</head>
+<body>
+
+	<script>
+		// Function to convert temperature between Celsius, Fahrenheit and Kelvin
+		function convertTemperature(temperature, fromUnit, toUnit) {
+			// Check if the input units are valid
+			if (fromUnit !== 'celsius' && fromUnit !== 'fahrenheit' && fromUnit !== 'kelvin') {
+				return 'Invalid argument: ' + fromUnit;
+			}
+			if (toUnit !== 'celsius' && toUnit !== 'fahrenheit' && toUnit !== 'kelvin') {
+				return 'Invalid argument: ' + toUnit;
+			}
+			// Convert the temperature from the source unit to Kelvin
+			var tempInKelvin;
+			switch (fromUnit) {
+				case 'celsius':
+					tempInKelvin = temperature + 273.15;
+					break;
+				case 'fahrenheit':
+					tempInKelvin = (temperature + 459.67) * 5/9;
+					break;
+				case 'kelvin':
+					tempInKelvin = temperature;
+					break;
+			}
+			// Convert the temperature from Kelvin to the target unit
+			var tempInTargetUnit;
+			switch (toUnit) {
+				case 'celsius':
+					tempInTargetUnit = tempInKelvin - 273.15;
+					break;
+				case 'fahrenheit':
+					tempInTargetUnit = tempInKelvin * 9/5 - 459.67;
+					break;
+				case 'kelvin':
+					tempInTargetUnit = tempInKelvin;
+					break;
+			}
+			return tempInTargetUnit.toFixed(2);
+		}
+
+		// Test the function with different inputs
+		console.log(convertTemperature(35, 'celsius', 'fahrenheit')); // expected output: 95
+		console.log(convertTemperature(35, 'celsius', 'kelvin')); // expected output: 308.15
+		console.log(convertTemperature(35, 'celsius', 'celsius')); // expected output: 35
+		console.log(convertTemperature(35, 'kelvin', 'fahrenheit')); // expected output: -396.67
+		console.log(convertTemperature(35, 'kelvin', 'kelvin')); // expected output: 35
+		console.log(convertTemperature(35, 'kelvin', 'celsius')); // expected output: -238.15
+		console.log(convertTemperature(35, 'fahrenheit', 'fahrenheit')); // expected output: 35
+		console.log(convertTemperature(35, 'fahrenheit', 'kelvin')); // expected output: 274.81666666666666
+		console.log(convertTemperature(35, 'fahrenheit', 'celsius')); // expected output: 1.6666666666666667
+		console.log(convertTemperature(35, 'degrees', 'degrees')); // expected output: Invalid argument: degrees
+		console.log(convertTemperature(35, 'celsius', 'degrees')); // expected output: Invalid argument: degrees
+		console.log(convertTemperature(35, 'degrees', 'fahrenheit')); // expected output: Invalid argument: degrees
+	</script>
+
+</body>
+</html>

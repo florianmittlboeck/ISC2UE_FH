@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loose Typing</title>
+</head>
+<body>
+<script>
+    
+    // define variables
+    let number = 10;
+    let stringNumber = "5";
+    let string = "Hello";
+    let array = ["apple", "banana", "orange"];
+
+    // operation 1: add number and stringNumber
+    console.log(number + parseInt(stringNumber));
+    console.log(typeof (number + parseInt(stringNumber)));
+
+    // operation 2: multiply number and stringNumber
+    console.log(number * parseInt(stringNumber));
+    console.log(typeof (number * parseInt(stringNumber)));
+
+    // operation 3: add number and string
+    console.log(number + string);
+    console.log(typeof (number + string));
+
+    // operation 4: multiply number and string
+    console.log(number * string);
+    console.log(typeof (number * string));
+
+    // operation 5: add number and array
+    console.log(number + array);
+    console.log(typeof (number + array));
+
+    // operation 6: multiply number and array
+    console.log(number * array);
+    console.log(typeof (number * array));
+
+</script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+/* Set default font family and color */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* Style buttons */
+  button,
+  input[type="button"],
+  input[type="submit"] {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+      box-shadow 0.15s ease-in-out;
+  }
+  button:hover,
+  input[type="button"]:hover,
+  input[type="submit"]:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+    box-shadow: none;
+  }
+  
+  /* Style headings */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  h3 {
+    font-size: 1.75rem;
+  }
+  
+  h4 {
+    font-size: 1.5rem;
+  }
+  
+  h5 {
+    font-size: 1.25rem;
+  }
+  
+  h6 {
+    font-size: 1rem;
+  }
+  
+  /* Style links */
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  
+  /* Style alerts */
+  .alert {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.25rem;
+  }
+  
+  .alert-primary {
+    color: #004085;
+    background-color: #cce5ff;
+    border-color: #b8daff;
+  }
+  
+  .alert-secondary {
+    color: #383d41;
+    background-color: #e2e3e5;
+    border-color: #d6d8db;
+  }
+  
+  .alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+  }
+  
+  .alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+  }
+  
+  .alert-warning {
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+  }
+  
+  .alert-info {
+    color: #0c5460;
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+  }
+  
+  .alert-light {
+    color: #818182;
+    background-color: #fefefe;
+    border-color: #fdfdfe;
+  }
+  
+  .alert-dark {
+    color: #1b1e21;
+    background-color: #d6d8d9;
+    border-color: #c6c8ca;
+  }
+
+  
+  .box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .box h1 {
+    margin-bottom: 20px;
+  }
+  

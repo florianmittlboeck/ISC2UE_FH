@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hangman</title>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+</head>
+<body>
+<header>
+  <!-- Der <header>-Tag wird verwendet, um den Kopfbereich der Seite zu kennzeichnen -->
+  <h1>Hangman</h1>
+</header>
+<main>
+  <article>
+    <canvas id="hangmanCanvas" width="400" height="400"></canvas>
+    <section>
+      <h2>Guess the word:</h2>
+      <p id="word"></p>
+    </section>
+    <section>
+      <h2>Guess a letter:</h2>
+      <input type="text" id="guessInput">
+      <button class="checkGuess">Check</button>
+    </section>
+    <section>
+      <p id="result"></p>
+    </section>
+  </article>
+</main>
+
+<script src="game.js"></script>
+</body>
+</html>
